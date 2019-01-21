@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @cachorro.nome %>
+</p>
+
+<p>
+  <strong>Data de nascimento:</strong>
+  <%= @cachorro.data_de_nascimento %>
+</p>
+
+<p>
+  <strong>Data aproximada:</strong>
+  <%= @cachorro.data_aproximada %>
+</p>
+
+<p>
+  <strong>Porte:</strong>
+  <%= @cachorro.porte %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @cachorro.sexo %>
+</p>
+
+<p>
+  <strong>Saude:</strong>
+  <%= @cachorro.saude %>
+</p>
+
+<p>
+  <strong>Temperamento:</strong>
+  <%= @cachorro.temperamento %>
+</p>
+
+<p>
+  <strong>Foto:</strong>
+  <%= @cachorro.foto %>
+</p>
+
+<p>
+  <strong>Equipamento:</strong>
+  <%= @cachorro.equipamento %>
+</p>
+
+<p>
+  <strong>Dupla para passeio:</strong>
+  <%= @cachorro.dupla_para_passeio_id %>
+</p>
+
+<p>
+  <strong>Frequencia de passeio:</strong>
+  <%= @cachorro.frequencia_de_passeio %>
+</p>
+
+<p>
+  <strong>Tempo de passeio:</strong>
+  <%= @cachorro.tempo_de_passeio %>
+</p>
+
+<p>
+  <strong>Habilitado para passeio:</strong>
+  <%= @cachorro.habilitado_para_passeio %>
+</p>
+
+<%= link_to 'Edit', edit_cachorro_path(@cachorro) %> |
+<%= link_to 'Back', cachorros_path %>

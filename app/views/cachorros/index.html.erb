@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cachorros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Data de nascimento</th>
+      <th>Data aproximada</th>
+      <th>Porte</th>
+      <th>Sexo</th>
+      <th>Saude</th>
+      <th>Temperamento</th>
+      <th>Foto</th>
+      <th>Equipamento</th>
+      <th>Dupla para passeio</th>
+      <th>Frequencia de passeio</th>
+      <th>Tempo de passeio</th>
+      <th>Habilitado para passeio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cachorros.each do |cachorro| %>
+      <tr>
+        <td><%= cachorro.nome %></td>
+        <td><%= cachorro.data_de_nascimento %></td>
+        <td><%= cachorro.data_aproximada %></td>
+        <td><%= cachorro.porte %></td>
+        <td><%= cachorro.sexo %></td>
+        <td><%= cachorro.saude %></td>
+        <td><%= cachorro.temperamento %></td>
+        <td><%= cachorro.foto %></td>
+        <td><%= cachorro.equipamento %></td>
+        <td><%= cachorro.dupla_para_passeio_id %></td>
+        <td><%= cachorro.frequencia_de_passeio %></td>
+        <td><%= cachorro.tempo_de_passeio %></td>
+        <td><%= cachorro.habilitado_para_passeio %></td>
+        <td><%= link_to 'Show', cachorro %></td>
+        <td><%= link_to 'Edit', edit_cachorro_path(cachorro) %></td>
+        <td><%= link_to 'Destroy', cachorro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cachorro', new_cachorro_path %>

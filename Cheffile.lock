@@ -1,0 +1,38 @@
+SITE
+  remote: https://supermarket.getchef.com/api/v1
+  specs:
+    apt (7.1.0)
+    ark (4.0.0)
+      build-essential (>= 0.0.0)
+      seven_zip (>= 0.0.0)
+    build-essential (8.2.1)
+      mingw (>= 1.1)
+      seven_zip (>= 0.0.0)
+    mingw (2.1.0)
+      seven_zip (>= 0.0.0)
+    nodejs (5.0.0)
+      ark (>= 2.0.2)
+      build-essential (>= 0.0.0)
+    ruby_build (1.0.0)
+      yum-epel (>= 0.0.0)
+    seven_zip (3.0.0)
+      windows (>= 0.0.0)
+    vim (2.0.2)
+    windows (5.1.1)
+    yum-epel (3.2.0)
+
+GIT
+  remote: https://github.com/aminin/chef-rbenv
+  ref: master
+  sha: 61d0a7c5bf66638d4f155f39316e689205c43cbe
+  specs:
+    rbenv (0.7.3)
+
+DEPENDENCIES
+  apt (>= 0)
+  build-essential (>= 0)
+  nodejs (>= 0)
+  rbenv (>= 0)
+  ruby_build (~> 1.0.0)
+  vim (~> 2.0.2)
+

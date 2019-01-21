@@ -1,0 +1,12 @@
+/log/*.log
+/tmp
+/test/*
+/doc/*
+/public/system/*
+
+.vagrant/
+/cookbooks
+/.bundle
+/vendor/bundle/
+
+db/*.sqlite3

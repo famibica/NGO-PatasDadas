@@ -1,0 +1,69 @@
+<%= form_for(@cachorro) do |f| %>
+  <% if @cachorro.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cachorro.errors.count, "error") %> prohibited this cachorro from being saved:</h2>
+
+      <ul>
+      <% @cachorro.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :data_de_nascimento %><br>
+    <%= f.datetime_select :data_de_nascimento %>
+  </div>
+  <div class="field">
+    <%= f.label :data_aproximada %><br>
+    <%= f.check_box :data_aproximada %>
+  </div>
+  <div class="field">
+    <%= f.label :porte %><br>
+    <%= f.text_field :porte %>
+  </div>
+  <div class="field">
+    <%= f.label :sexo %><br>
+    <%= f.text_field :sexo %>
+  </div>
+  <div class="field">
+    <%= f.label :saude %><br>
+    <%= f.text_field :saude %>
+  </div>
+  <div class="field">
+    <%= f.label :temperamento %><br>
+    <%= f.text_field :temperamento %>
+  </div>
+  <div class="field">
+    <%= f.label :foto %><br>
+    <%= f.text_field :foto %>
+  </div>
+  <div class="field">
+    <%= f.label :equipamento %><br>
+    <%= f.text_field :equipamento %>
+  </div>
+  <div class="field">
+    <%= f.label :dupla_para_passeio_id %><br>
+    <%= f.number_field :dupla_para_passeio_id %>
+  </div>
+  <div class="field">
+    <%= f.label :frequencia_de_passeio %><br>
+    <%= f.number_field :frequencia_de_passeio %>
+  </div>
+  <div class="field">
+    <%= f.label :tempo_de_passeio %><br>
+    <%= f.number_field :tempo_de_passeio %>
+  </div>
+  <div class="field">
+    <%= f.label :habilitado_para_passeio %><br>
+    <%= f.check_box :habilitado_para_passeio %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
